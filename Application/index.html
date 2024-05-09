@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #007bff; /* Düz mavi arka plan rengi */
+            color: white; /* Metin rengi */
+        }
+        .container {
+            max-width: 600px; /* Formun maksimum genişliği */
+            margin: auto; /* Ortalanması */
+            background-color: rgba(0, 0, 0, 0.7); /* Form arka planının opaklığı */
+            padding: 20px; /* Form içeriği arasındaki boşluk */
+            border-radius: 10px; /* Kenar yuvarlaklığı */
+        }
+        h2, h3 {
+            color: white;
+            text-align: center; /* Başlık hizalaması */
+        }
+        input[type="file"] {
+            color: white; /* Dosya yükleme metni rengi */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>About CIFAR-10</h2>
+    <p>The CIFAR-10 dataset is a dataset consisting of 60,000 color images belonging to 10 different classes. Each class contains 6,000 images. Classes include airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck.</p>
+    <h2>Convolutional Neural Network (CNN) Model on CIFAR-10</h2>
+    <ul>
+        <li>
+            <strong>Description of Model Architecture:</strong>
+            <ul>
+                <li><strong>Input Layer:</strong> The shape is defined for images of size 32x32 pixels with 3 channels (RGB).</li>
+                <li><strong>Convolutional Layers:</strong> Two convolutional layers (`Conv2D`) are used. Each is followed by a ReLU activation function and then a batch normalization layer (`BatchNormalization`). Following the convolutional layers are max-pooling layers (`MaxPooling2D`).</li>
+                <li><strong>Dense Layers:</strong> The outputs of the convolutional layers are flattened, and then two dense layers (`Dense`) follow. Each is accompanied by a ReLU activation function. Additionally, dropout layers (`Dropout`) are used to prevent overfitting.</li>
+                <li><strong>Output Layer:</strong> It is a fully connected layer with a `softmax` activation function, defining the 10 classes. This layer predicts which class the given image belongs to.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Training the Model:</strong>
+            <p>The model is compiled using the `categorical_crossentropy` loss function and the `Adam` optimizer. The model is trained for 50 epochs on the training and validation datasets.</p>
+        </li>
+        <li>
+            <strong>Training Results:</strong>
+            <p>Throughout the training process, the accuracy metric of the model increases over time, achieving successful results on the validation dataset. At the end of training, the model can be evaluated on the test dataset to assess its performance.</p>
+        </li>
+    </ul>
+</div>
+
+</head>
+    <div style="text-align: center;">
+    <h2 style="color: white;">Model Accuracy Graph</h2>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/mTsHtgY/graph.png" alt="graph" border="0"></a>
+</body>
+    </div>
+</body>
+        <h3>UPLOAD AND IMAGE(Supporting File Types: JPEG, PNG, BMP)</h3>
+        <form action="/predict/" enctype="multipart/form-data" method="post">
+            <input name="file" type="file" class="form-control mb-2"> <!-- Dosya yükleme alanı -->
+            <button type="submit" class="btn btn-primary">Submit</button> <!-- Gönderme düğmesi -->
+        </form>
+        <title>Trained Model Accuracy Graph</title>
+
+</html>
