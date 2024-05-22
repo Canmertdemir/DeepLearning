@@ -44,13 +44,13 @@ Sayısal değişkenlerden oluşan bu veri setinde herhangi bir encoder kullanıl
    Modeli eğitmek için klasörlerin altında bulunan 'model_ismi.py' dosyalarını kullanınız.
 
 6. Bulgular
-    Zaman serilerinde makine öğrenmesi modelleri Derin öğrenme modelleri kadar iyi sonuç vermemektedir.
-Makine öğrenmesi modellerinden LightGbm ve XGBoost en iyi çalışan zaman serisi modelleri olmasına rağmen iyi sonuç vermemiştir.
-Tam bağlı sinir ağı regresyon modeli derin öğrenme modelleri arasında en az performans gösteren modeldir.
-Bu veri seti özelinde RNN ile LSTM yaklaşık olarak aynı performansı göstermiştir.
-LSTM ve CNN zaman serisi modelleri en iyi performans veren modellerdir.
-CNN, LSTM’e göre daha iyi sonuç vermiştir. 
-En iyi performans veren model CNN Zaman Serisi Regresyon modelidir.
+   Zaman serilerinde makine öğrenmesi modelleri Derin öğrenme modelleri kadar iyi sonuç vermemektedir.
+   Makine öğrenmesi modellerinden LightGbm ve XGBoost en iyi çalışan zaman serisi modelleri olmasına rağmen iyi sonuç vermemiştir.
+   Tam bağlı sinir ağı regresyon modeli derin öğrenme modelleri arasında en az performans gösteren modeldir.
+   Bu veri seti özelinde RNN ile LSTM yaklaşık olarak aynı performansı göstermiştir.
+   LSTM ve CNN zaman serisi modelleri en iyi performans veren modellerdir.
+   CNN, LSTM’e göre daha iyi sonuç vermiştir. 
+   En iyi performans veren model CNN Zaman Serisi Regresyon modelidir.
 
 
 7.Tavsiyeler
