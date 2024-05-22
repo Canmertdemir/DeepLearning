@@ -86,8 +86,6 @@ Sayısal değişkenlerden oluşan bu veri setinde herhangi bir encoder kullanıl
 Bu tavsiyeler doğrultusunda zaman serisi veri setinizde daha iyi performans elde edebilirsiniz.
 
 ### Sonuçlar:
-Gönderdiğiniz ek bilgilere dayanarak zaman serisi verilerinde model performansını iyileştirmek için aşağıdaki öneriler genişletilmiştir:
-
 ### Makine Öğrenmesi Modelleri:
 1. **Model Çeşitliliği ve Birleştirme:**
    - Daha fazla makine öğrenmesi modeli kullanarak ve bu modelleri bir araya getirerek (ensembling) model performansını artırabilirsiniz. Örneğin, Random Forest, Gradient Boosting, CatBoost gibi modelleri deneyebilirsiniz.
