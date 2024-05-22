@@ -12,16 +12,16 @@ Bu proje, Individual Household Electric Power Consumption veri kümesi üzerinde
    - NumPy
    - Matplotlib
    - Scikit-learn
-2. Kurulum
+2. **Kurulum**
 
    Gereksinimleri yüklemek için aşağıdaki komutları kullanın:
 
-conda create -n pytorch python=3.7
-conda activate pytorch
-conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
-conda install -c anaconda cudatoolkit(caffe2_nvrtc.dll not found )
-conda install python=3.7.4
-conda install scikit-learn
+   - conda create -n pytorch python=3.7
+   - conda activate pytorch
+   - conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
+   - conda install -c anaconda cudatoolkit(caffe2_nvrtc.dll not found )
+   - conda install python=3.7.4
+   - conda install scikit-learn
 
 *Test*
 import torch
