@@ -1,10 +1,6 @@
 # Zaman Serileri Özelinde Derin Öğrenme Modellerinin Karşılaştırılması
 
-# CNN Modeli Kullanımı
-
 Bu proje, Individual Household Electric Power Consumption veri kümesi üzerinde farklı derin öğrenme modellerinin eğitimini ve sonrasında bu modelin kullanımını içerir.
-
-## Kullanım
 
 1. **Gereksinimler**
    - Python 3.7
