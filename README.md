@@ -50,7 +50,7 @@ Sayısal değişkenlerden oluşan bu veri setinde herhangi bir encoder kullanıl
    Bu veri seti özelinde RNN ile LSTM yaklaşık olarak aynı performansı göstermiştir.
    LSTM ve CNN zaman serisi modelleri en iyi performans veren modellerdir.
    CNN, LSTM’e göre daha iyi sonuç vermiştir. 
-   En iyi performans veren model CNN Zaman Serisi Regresyon modelidir.
+   En iyi performans veren model CNN Zaman Serisi Regresyon modelidir.   
 
 
 7.Tavsiyeler
