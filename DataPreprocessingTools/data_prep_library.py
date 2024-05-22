@@ -1,6 +1,4 @@
 import numpy as np
-import optuna
-import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import r2_score
@@ -124,8 +122,8 @@ def regression_test(X_train, X_test, y_train, y_test):
     y_train_lbgm_pred = lgbm_reg.predict(X_train)
     y_test_lbgm_pred = lgbm_reg.predict(X_test)
 
-    train_rmse_lbgm = np.sqrt(mean_squared_error(y_train, y_train_lbgm_pred))
-    test_rmse_lbgm = np.sqrt(mean_squared_error(y_test, y_test_lbgm_pred))
+    train_rmse_lbgm = (mean_squared_error(y_train, y_train_lbgm_pred))
+    test_rmse_lbgm = (mean_squared_error(y_test, y_test_lbgm_pred))
 
     train_r2_lbgm = r2_score(y_train, y_train_lbgm_pred)
     test_r2_lbgm = r2_score(y_test, y_test_lbgm_pred)
@@ -140,8 +138,8 @@ def regression_test(X_train, X_test, y_train, y_test):
     y_train_catboost_pred = catboost_reg.predict(X_train)
     y_test_catboost_pred = catboost_reg.predict(X_test)
 
-    train_rmse_catboost = np.sqrt(mean_squared_error(y_train, y_train_catboost_pred))
-    test_rmse_catboost = np.sqrt(mean_squared_error(y_test, y_test_catboost_pred))
+    train_rmse_catboost = (mean_squared_error(y_train, y_train_catboost_pred))
+    test_rmse_catboost = (mean_squared_error(y_test, y_test_catboost_pred))
 
     train_r2_catboost = r2_score(y_train, y_train_catboost_pred)
     test_r2_catboost = r2_score(y_test, y_test_catboost_pred)

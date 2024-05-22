@@ -1,6 +1,7 @@
 import numpy as np
 import joblib
 import pandas as pd
+from matplotlib import pyplot as plt
 from sklearn.model_selection import train_test_split
 from lightgbm import LGBMRegressor
 from xgboost import XGBRegressor
@@ -39,11 +40,11 @@ def model_stacking(Xtrain, Xtest, ytrain, ytest):
     stacking_train_pred = stacking_reg.predict(Xtrain)
     stacking_test_pred = stacking_reg.predict(Xtest)
 
-    stacking_train_rmse = np.sqrt(mean_squared_error(ytrain, stacking_train_pred))
-    stacking_test_rmse = np.sqrt(mean_squared_error(ytest, stacking_test_pred))
+    stacking_train_mse = (mean_squared_error(ytrain, stacking_train_pred))
+    stacking_test_mse = (mean_squared_error(ytest, stacking_test_pred))
 
-    print('Train RMSE:', stacking_train_rmse)
-    print('Test RMSE:', stacking_test_rmse)
+    print('Train RMSE:', stacking_train_mse)
+    print('Test RMSE:', stacking_test_mse)
 
     joblib.dump(stacking_reg, 'stacking_model.pkl')
 
@@ -52,6 +53,30 @@ def model_stacking(Xtrain, Xtest, ytrain, ytest):
 
     feature_importance(data, X_train, y_train, save_path="feature_importance_plot.png")
 
+
     return predictions
 
 predictions = model_stacking(X_train, X_test, y_train, y_test)
+
+
+
+def test_vs_prediction(df, y_test, predictions, save_path=None):
+    plt.figure(figsize=(10, 5))
+
+    df_dates = df['Day'][:1000]
+
+    plt.plot(df_dates, y_test[:1000], label='Test Verileri', marker='o')
+    plt.plot(df_dates, predictions[:1000], label='Tahmin Verileri', marker='x')
+
+    plt.title('Test Verileri ve Tahmin Verileri Karşılaştırması')
+    plt.xlabel('Tarih')
+    plt.ylabel('Değerler')
+    plt.legend()
+    plt.grid(True)
+
+    if save_path:
+        plt.savefig(save_path)
+    plt.show()
+
+test_vs_prediction(data, y_test, predictions, save_path='EnsembleML_Model_prediction_vs_Test.png')
+
