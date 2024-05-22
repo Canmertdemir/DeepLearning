@@ -135,9 +135,9 @@ Gönderdiğiniz ek bilgilere dayanarak zaman serisi verilerinde model performans
    - Zaman serisi verilerinde cross-validation yaparken, verinin ardışık yapısını bozmamak için zaman temelli cross-validation yöntemlerini kullabilir.
 
 ### Referanslar:   
--https://coderzcolumn.com/tutorials/data-science/how-to-remove-trend-and-seasonality-from-time-series-data-using-python-pandas
--https://tr.d2l.ai/chapter_convolutional-neural-networks/index.html
--https://coderzcolumn.com/tutorials/artificial-intelligence/pytorch-lstm-networks-for-time-series-regression-tasks
--https://www.geeksforgeeks.org/ensemble-methods-in-python/
--https://machinelearningmastery.com/building-a-regression-model-in-pytorch/
--https://machinelearningmastery.com/building-a-regression-model-in-pytorch/
+   https://coderzcolumn.com/tutorials/data-science/how-to-remove-trend-and-seasonality-from-time-series-data-using-python-pandas
+   https://tr.d2l.ai/chapter_convolutional-neural-networks/index.html
+   https://coderzcolumn.com/tutorials/artificial-intelligence/pytorch-lstm-networks-for-time-series-regression-tasks
+   https://www.geeksforgeeks.org/ensemble-methods-in-python/
+   https://machinelearningmastery.com/building-a-regression-model-in-pytorch/
+   https://machinelearningmastery.com/building-a-regression-model-in-pytorch/
