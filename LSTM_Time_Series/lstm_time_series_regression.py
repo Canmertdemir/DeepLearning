@@ -13,22 +13,6 @@ from torch.nn import init
 from torch.utils.data import TensorDataset, DataLoader
 from DataPreprocessingTools.data_prep_library import rename_columns
 
-
-"""
-Try different lookback values. We have used 30 previous values to make predictions of the current.
-Make architecture predict more than one target value. We have created an architecture that only predicts one future target value.
-We can create a network that predicts 5 or 10 future target values as well. The data needs to be organized in that way and the output units of the last dense layer should be the same as our selected number of future target values.
-Try adding features to data from datetime like a weekday, month-end/month-start, month, AM/PM, etc.
-Try different output units for LSTM layers.
-Stack more LSTM layers (This can increase training time).
-Try adding more dense layers after LSTM layers.
-Try different weight initialization methods.
-Try learning rate schedulers
-
-Aşağıdaki linkte güzel bir analiz var onu kullan.
-https://coderzcolumn.com/tutorials/data-science/how-to-remove-trend-and-seasonality-from-time-series-data-using-python-pandas 
-"""
-
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 400)
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
